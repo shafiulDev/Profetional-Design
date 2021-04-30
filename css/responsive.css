@@ -1,0 +1,236 @@
+
+@media (max-width: 991px) {
+
+	.slider-body .para-2 {
+
+		margin-bottom: 20px;
+
+	}
+
+	.nav-list-name li a {
+
+		padding-left: 48px;
+
+		padding-right: 40px;
+
+	}
+
+	.abt-wrapper {
+
+		margin-top: 20px;
+
+	}
+
+	.bullet-btn {
+
+		display: none;
+
+	}
+
+	.full-about-sec {
+
+		margin-top: 0;
+
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.topber {
+
+		display: block;
+
+	}
+
+	.header-left ul {
+
+		text-align: center;
+
+		display: block;
+
+	}
+
+	.header-right ul {
+
+		justify-content: center;
+
+	}
+
+	.header-left li {
+
+		padding: 5px;
+
+	}
+
+	.slider-body h2 {
+
+		font-size: 42px;
+
+	}
+
+	.about-img {
+
+		margin-top: 120px;
+
+	}
+
+	.bullet-btn {
+
+		overflow: hidden;
+
+	}
+
+	.slider-body .para-2 {
+
+		font-size: 11px;
+
+		margin-bottom: 30px;
+
+	}
+
+	.abt-wrapper {
+
+		margin-left: 115px;
+
+		margin-top: 194%;
+
+	}
+
+	.sec2-righi-site {
+
+		top: 0px;
+
+		left: -10px;
+
+	}
+
+	/* member list */
+
+	.mem-hover-icon ul {
+
+		padding: 20px;
+
+	}
+
+	.mem-hover-icon {
+
+		bottom: -76px;
+
+	}
+
+	/* total work */
+
+	.total-work-section {
+
+		margin-top: 689px;
+
+	}
+
+	.work-nav ul {
+
+		display: block;
+
+		text-align: center;
+
+	}
+
+	.work-nav ul li {
+
+		padding-top: 10px;
+
+		padding-bottom: 10px;
+
+		transition: 0.3s;
+
+	}
+
+	.work-nav ul li:hover {
+
+		background-color: rgb(75, 73, 73);
+
+		border-radius: 30px;
+
+		color: white;
+
+	}
+
+	.work-nav ul li::after {
+
+		height: 0;
+
+	}
+
+	/* tab section */
+
+	.nav-list-name {
+
+		display: block;
+
+		text-align: center;
+
+	}
+
+	.nav-list-name li a.active {
+
+		border-bottom: none;
+
+		border-radius: 30px;
+
+		color: black;
+
+	}
+
+	/* footer section */
+
+	.widged-bg {
+
+		background: none;
+
+	}
+
+	.widged-bg::after {
+
+		background: none;
+
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	/* carosel part */
+
+	.slider-body .para-1 {
+
+		font-size: 14px;
+
+	}
+
+	.slider-body h2 {
+
+		font-size: 20px;
+
+	}
+
+	/* footer section */
+
+	.widged {
+
+		text-align: left;
+
+	}
+
+	ul.foot-icon {
+
+		justify-content: left;
+
+	}
+
+	.widged-con {
+
+		margin-bottom: 60px;
+
+	}
+
+}

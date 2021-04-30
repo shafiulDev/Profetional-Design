@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* google font */
+
+/* 
+********************
+Common Style
+********************
+ */
+
+ body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(5, 0, 5);
+}
+h2 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: none;
+}
+/* 
+======================
+common header section
+======================
+*/
+
+.sec-header {
+	text-align: center;
+}
+.sec-header .header-top {
+	font-size: 10px;
+}
+.sec-header h2 span {
+	color: rgb(154, 199, 81);
+}
+.sec-header .header-butt {
+	top: 7px;
+	position: relative;
+	background-color: rgb(154, 199, 81);
+	height: 3px;
+	width: 40px;
+	margin: 0 auto;
+}
+.sec-header .header-butt::after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	left: -10px;
+	right: -10px;
+	top: 1px;
+	z-index: -5;
+	background-color: rgb(190, 189, 189);
+}
+.abt-wrapper {
+	text-align: left;
+}
+/* header style start */
+
+header {
+	padding: 10px 0;
+	background-color: #343434;
+}
+.topber {
+	color: rgb(164, 165, 167);
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+}
+.header-left ul {
+	display: flex;
+	padding-inline-start: 0;
+	margin: 0;
+}
+.header-left li {
+	list-style-type: none;
+	margin-left: 10px;
+}
+.header-right ul {
+	display: flex;
+	margin: 0;
+}
+.header-right ul li {
+	margin-right: 10px;
+	list-style-type: none;
+}
+.header-right ul li a i {
+	transition: 0.3s;
+}
+.header-right ul li a i {
+	color: rgb(126, 121, 121);
+}
+.header-right ul li a i:hover {
+	color: white;
+}
+/* header style end */
+
+/* Navbar sytle coding start */
+
+.nav-style a {
+	font-size: 13px;
+	font-weight: 600;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.navbar-expand-lg .navbar-nav1 .nav-link {
+	padding-right: 0;
+	padding-left: 0;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+Navbar sytle coding End
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* 
+==============================
+ Carosal codding start
+==============================
+*/
+
+.slider-item {
+	position: relative;
+}
+.slider-item img {
+	display: inline-block;
+	width: 100%;
+}
+.slider-body {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.slider-body a {
+	color: white;
+	text-decoration: none;
+	font-size: 13px;
+	border: 1px solid white;
+}
+.slider-item::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(8, 8, 8, .6);
+}
+.slider-body .para-1 {
+	font-size: 24px;
+	font-weight: 300;
+}
+.slider-body .para-2 {
+	font-size: 16px;
+	margin-bottom: 75px;
+}
+.slider-body h2 {
+	margin-top: -12px;
+	font-size: 60px;
+	text-transform: uppercase;
+}
+/* 
+=====================
+btn Style 
+=====================
+*/
+
+.common-btn .my-btn {
+	transition: 0.3s;
+	border-radius: 30px;
+	padding: 10px 30px;
+	background-color: rgb(97, 156, 29);
+}
+.common-btn .my-btn:hover {
+	background-color: white;
+	color: green;
+}
+.abt-btn .my-btn {
+	background-color: white;
+	border: 1px solid green;
+}
+.abt-btn .my-btn:hover {
+	background-color: rgb(65, 146, 40);
+	color: rgb(249, 255, 249);
+}
+/* bullet button */
+
+.slider {
+	position: relative;
+}
+.bullet-btn {
+	display: flex;
+	position: absolute;
+	z-index: 999999;
+	bottom: 26px;
+	justify-content: center;
+	left: 0;
+	right: 0;
+}
+.bullet-btn ul {
+	display: flex;
+}
+.bullet-btn ul li {
+	margin-left: 5px;
+	margin-right: 5px;
+	list-style: none;
+	height: 5px;
+	width: 5px;
+	background-color: rgb(202, 199, 199);
+	border: 2px solid white;
+}
+.bullet-btn ul li.active {
+	border: 2px solid white;
+}
+/* arrow icon */
+
+.arrow-icon .left-arrow,
+.arrow-icon .right-arrow {
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.arrow-icon .left-arrow {
+	left: 3%;
+}
+.arrow-icon .right-arrow {
+	right: 3%;
+}
+.arrow-icon .right-arrow:hover,
+.arrow-icon .left-arrow:hover {
+	color: green;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+ Carosal codding end
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* 
+==============================
+about section codding  start
+==============================
+*/
+
+.full-about-sec {
+	margin-top: -120px;
+}
+/* col-5 */
+
+.about-img {
+	background: rgb(56, 136, 56);
+	position: absolute;
+}
+.about-img img {
+	max-width: 100%;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+/* col-7 */
+
+.abt-bottom {
+	font-size: 13px;
+	margin: 50px 0;
+}
+.abt-wrapper {
+	margin-left: 115px;
+	margin-top: 40%;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+about section codding Ends
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* 
+==============================
+we do css codding start 
+==============================
+*/
+
+/* all left site */
+
+.we-do-wrapper {
+	background-color: rgb(245, 245, 245);
+	margin-top: 90px;
+	padding-bottom: 4px;
+}
+.sec-header-mt {
+	margin-top: 90px;
+}
+.iconion-part ion-icon {
+	font-size: 30px;
+}
+.h4-style h4 {
+	margin-top: 20px;
+	margin-bottom: 25px;
+	position: relative;
+	padding-bottom: 10px;
+}
+.wedo-item {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.h4-style h4:after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 1px;
+	background: rgb(14, 13, 13);
+	left: 0;
+	bottom: 0;
+}
+.iconion-part p {
+	font-size: 13px;
+	text-align: justify;
+}
+/* right site */
+
+.sec2-righi-site {
+	top: 100px;
+	left: 50px;
+	margin-top: 100px;
+	position: absolute;
+	background: blue;
+}
+.sec2-righi-site img {
+	max-width: 100%;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+we do css codding end 
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* 
+==============================
+Work Section codding start
+==============================
+*/
+
+.total-work-section {
+	padding-top: 80px;
+}
+.work-nav {
+	margin-top: 80px;
+}
+.work-nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.work-nav ul li {
+	cursor: pointer;
+	font-size: 13px;
+	padding-left: 8px;
+	padding-right: 8px;
+	position: relative;
+}
+.work-nav ul li::after {
+	position: absolute;
+	content: "";
+	height: 12px;
+	width: 1px;
+	right: 0;
+	background-color: rgb(0, 0, 0);
+	top: 20%;
+}
+.work-nav ul li:last-child:after {
+	width: 0;
+}
+.mixitup-control-active {
+	color: rgb(38, 94, 38);
+}
+/* gellary-item codding */
+
+.gellary {
+	margin-top: 30px;
+}
+.gellary-item img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+.gellary-item {
+	position: relative;
+}
+/* this is hover item */
+
+.when-item-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgb(42, 143, 47, 0.8);
+	transform: scale(0);
+	transition: 0.3s;
+}
+.when-item-hover span {
+	color: white;
+	display: inline-block;
+	position: absolute;
+	font-size: 70px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.gellary-item:hover .when-item-hover {
+	transform: scale(1);
+	
+}
+.gellary-pad {
+	padding: 5px;
+}
+.d-none{
+	display: none;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+work secton codding End
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* 
+==============================
+Start tab section codding
+==============================
+*/
+.tab-area{
+	margin-top: 100px;
+}
+.tab-item{
+	border-top: 1px solid rgb(224, 224, 224);
+	border-bottom: 1px solid rgb(224, 224, 224);
+}
+.nav-list-name{
+	display: flex;
+	justify-content:space-around;
+
+}
+.nav-list-name li{ 
+	list-style: none;
+
+}
+
+.nav-list-name li a{
+	padding: 20px;
+	padding-left: 60px;
+	padding-right: 60px;
+	display: block;
+	font-size: 18px;
+
+}
+.nav-list-name li a i{
+	margin-right: 10px;
+}
+.nav-list-name li a.active{
+	background: rgb(238, 236, 236);
+	border-bottom: 2px solid rgb(28, 117, 36);
+}
+
+.tab-discribe{
+	background: rgb(238, 236, 236);
+	padding: 30px;
+	padding-top: 80px;
+}
+.tab-left p{
+	font-size: 13px;
+}
+.tab-discribe img{
+	width: 100%;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+End tab section codding 
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
+/* 
+==============================
+Start theme section codding
+==============================
+*/
+.my-theme{
+	position: relative;
+	text-transform: uppercase;
+	border-top: 1px solid rgb(30, 73, 40);
+	border-bottom: 7px solid rgb(30, 73, 40);
+	text-align: center;
+	background-image: url("../img/big.jpg");
+	background-attachment: fixed;
+	z-index: -4;
+}
+.my-theme::before{
+	content: "";
+	position: absolute;
+	background: rgb(7, 7, 7,0.6);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -5;
+}
+
+.theme-im{
+	color: white;
+	padding:150px 0;
+}	
+.theme-im h2{
+	z-index: 5;
+
+}
+a.theme-btn{
+	background: rgb(35, 114, 35);
+	padding: 15px 30px;
+	color: white;
+	border: 1px solid green;
+	cursor: pointer;
+	border-radius: 30px;
+	transition: 0.3s;
+	text-decoration: none;
+}
+a.theme-btn:hover{
+	background: white;
+	color: green;
+}
+.theme-btn{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 56%);
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+End theme section codding 
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* 
+==============================
+Start team member codding
+==============================
+*/
+.team{
+
+	margin-bottom: 100px;
+}
+.team-header{
+	margin-top: 125px;
+	margin-bottom: 100px;
+}
+
+.mem-item img{
+	max-width: 100%;
+	width: 100%;
+}
+
+.mem-item{
+	position: relative;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.mem-item-hover{
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgb(14, 14, 10,.6);
+	transition: 0.4s;
+}
+.mem-item:hover .mem-item-hover{
+	top: 0;
+}
+.mem-hover-text{
+	position: absolute;
+	top: 50%;
+}
+.mem-item:hover .mem-hover-text{
+	transform: translateY(-50%);
+}
+.mem-hover-text h4{
+	font-size: 20px;
+
+}
+.mem-hover-text p{
+	font-size: 13px;
+}
+.mem-hover-icon{
+	background-color: green;
+}
+.mem-hover-icon ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.mem-hover-icon ul li a{
+	color: white;
+	padding: 5px;
+	display: inline-block;
+}
+.mem-hover-icon ul li a i{
+	transition: 0.3s;
+}
+.mem-hover-icon ul li a:hover i{
+	transform: rotate(360deg);
+
+}
+
+.mem-hover-icon{
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	right: 0;
+	transition: 0.4s;
+}
+.mem-item:hover .mem-hover-icon{
+	bottom: 0;
+
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+End team member codding
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
+/* 
+==============================
+Start blog section codding 
+==============================
+*/
+.blog-header{
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+.total-blog-sec{
+	margin-bottom: 30px;
+}
+.blog-left-item{
+	position: relative;
+}
+.blog-left-item img{
+	max-width: 100%;
+}
+.date-manth {
+    color: white;
+    position: absolute;
+    background: green;
+    left: 20px;
+    bottom: 20px;
+    padding: 20px;
+    box-shadow: 11px 11px #0ccb0c;
+}
+
+.blog-foot{
+	margin-top: 25px;
+}
+.blog-foot h4{
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.blog-foot-p1{
+	font-size: 12px;
+}
+.blog-foot-p2{
+	font-size: 13px;
+}
+.total-blog-sec{
+	position: relative;
+}
+.left-foot{
+	padding: 10px;
+	background: rgb(204, 204, 204);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+End blog section codding
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+/* 
+==============================
+Start brand add codding
+==============================
+*/
+.brand{
+	margin-top: 25px;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	text-align: center;
+	background: rgb(231, 231, 231);
+
+}
+.owl-carousel .owl-item img {
+	width: 50%;
+	margin: 0 auto;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+End brand add codding
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
+/* 
+==============================
+Start footer section codding 
+==============================
+*/
+	.footer{
+		background: rgb(17, 17, 17);
+	}
+	.widged{
+		padding: 80px 20px;
+		color: rgb(187, 185, 185);
+		text-align: center;
+	}
+	.widged img{
+		width: 92px;
+		color: white;
+	}
+	ul.foot-icon{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+	ul.foot-icon{
+		margin-top: 20px;
+	}
+	ul.foot-icon li a{
+		color: rgb(187, 185, 185);
+		padding: 5px;
+		transition: 0.3s;
+	}
+	ul.foot-icon li a:hover{
+		opacity: 0.8;
+	}
+	ul.foot-icon li a i{
+		transition: 0.3s;
+	}
+	ul.foot-icon li a i:hover{
+		transform: rotate(360deg);
+			
+	}
+	.widged-bg{
+		background: rgb(27, 25, 25);
+		position: relative;
+	}
+	.widged-bg::after{
+	content: "";
+	position: absolute;
+	background: rgb(27, 25, 25);
+	top: 0;
+	bottom: 0;
+	left: -4545454px;
+	right: 100%;
+
+	}
+
+	/* widged content */
+	.widged-content{
+		margin-top: 28px;
+	}
+	.widged-con{
+		width: 100%;
+		padding-bottom: 0;
+		padding-top: 30px;
+		text-align: left;
+	}
+	.widged-con h4{
+		font-size: 20px;
+	}
+	.widged-content p {
+		font-size: 13px;
+	}
+	/* tweets section */
+	.widged-tweets{
+		margin-top: 28px;
+	}
+	.widged-tweets i{
+		display: block;
+		margin-right: 10px;
+		float: left;
+		margin-top: 5px;
+	}
+	.widged-tweets p{
+		
+		margin-left: 32px;
+		font-size: 13px;
+	}
+	/* Submit section */
+	.input-part .email{
+		width: 100%;
+		background: rgb(17, 17, 17);
+		border: 1px solid  rgb(187, 185, 185);
+		color: rgb(187, 185, 185);
+		border-radius: 30px;
+		padding: 10px 48px 10px 30px;
+		
+	}
+	.input-part input:focus{
+		outline: 0;
+	}
+	.input-part{
+		position: relative;
+	}
+	.input-part:after {
+		position: absolute;
+		content: "\f3fe";
+		font-family: "Font Awesome 5 Brands";
+		font-weight: 700;
+		top: 10px;
+		right: 15px;
+		bottom: 0;
+		pointer-events: none;
+	}
+	.input-part .submit{
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 20px;
+		background: rgb(17, 17, 17);
+		border: 1px solid  rgb(187, 185, 185);
+		color: rgb(187, 185, 185);
+		border-radius: 30px;
+		padding: 10px 20px;
+		font-size: 0;
+	}
+	
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+End footer section codding
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
+/* copy right */
+.copy-right{
+	text-align: center;
+	background: rgb(0, 0, 0);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+.copy-right p{
+	margin-bottom: 0;
+	font-size: 13px;
+}
+.copy-right p a{
+	color: rgb(20, 107, 20);
+	font-size: 13px;
+}
+/* go top
+.go-top {
+	position: fixed;
+    right: 30px;
+    bottom: 20px;
+}
+.go-top  a{
+	background: #111111;
+	padding: 13px 14px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	border-radius: 20px;
+}
+.go-top  a i{
+	margin-top: 30px;
+} */
+
+
+/* 
+==============================
+Start
+==============================
+*/
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~
+End
+~~~~~~~~~~~~~~~~~~~~~~~
+*/
